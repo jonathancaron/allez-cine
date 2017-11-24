@@ -1,3 +1,18 @@
+#slideShow{
+  min-height: 400px;
+  max-height: 400px;
+
+}
+#slideShowLeft{
+  min-height: 400px;
+  max-height: 400px;
+  border: 1px solid black;
+}
+#slideShowRight{
+  min-height: 400px;
+  max-height: 400px;
+  border: 1px solid black;
+}
 .orange{background-color:#ff8c1b;}
 .barreNav{
   background-color:#ffffff;
