@@ -79,3 +79,6 @@ h2{
 .top{vertical-align: top;}
 .bottom{vertical-align: bottom;}
 .inlineblock{display: inline-block;}
+.justif{
+  text-align: justify;
+}

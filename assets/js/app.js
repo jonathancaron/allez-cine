@@ -6,22 +6,6 @@ let app = {
   db : {
     data : []
   },
-  addslideShowRight : function(){
-    console.log('Ajout du slideShowRight');
-    let slide = document.getElementById('slideShowRight');
-    for (var i = 0; i <= 4; i++) {
-      slide.innerHTML += "<div class=\"row filmslide\">" +
-      "<div class=\"col-sm-3\">" +
-        "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"50px\"> " +
-      "</div>" +
-      "<div class=\"col-sm-9\">" +
-        "<div class=\"gris marginOne inlineblock top\">" + app.db.data[i]['title'] + "</div></br>" +
-        "<div class=\"gris inlineblock top\">" + app.db.data[i]['desc'] + "</div>" +
-      "</div>" +
-      "</div>";
-
-    }
-  },
   addBoxe1 : function(){
     console.log('Ajout du boxe 1');
     let boxe1 = document.getElementById('boxe1');
@@ -92,10 +76,10 @@ let app = {
     }
   },
   start : function(){
-    app.addslideShowRight();
     app.addBoxe1();
     app.addBoxe2();
     app.addCategories();
+
   }
 }
 
@@ -217,7 +201,7 @@ app.start();
 /*JQUERY CODE*/
 function openBoxe22(){
   $(document).ready(function(){
-    $("#boxe22").toggle();
+    $("#boxe22").toggle(500);
     $("#plusdefilm").toggle();
     $("#moinsdefilm").toggle();
 

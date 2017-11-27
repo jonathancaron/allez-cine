@@ -5,6 +5,15 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Nécessaire pour le slide -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link href="./assets/css/jquery.slidey.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="./assets/js/jquery.slidey.js"></script>
+    <script src="./assets/js/jquery.dotdotdot.min.js"></script>
+    <!-- // Nécessaire pour le slide -->
+
     <title>Allez Ciné</title>
   </head>
   <body>
@@ -27,58 +36,51 @@
             </div>
           </div>
         </div>
-
-        <div class="container-fluid orange barreNav2">
-
-        </div>
+        <div class="container-fluid orange barreNav2"></div>
       </header>
-
       <section id="main-body">
         <div id="slideShow" class="container-fluid">
           <div class="row">
-            <div id="slideShowLeft" class="col-sm-10">
+            <div id="slidey" style="display:none;">
+                <ul>
+                      <li><img src="./assets/img/films/batmanmovie-2017-comedie.jpg"><p class='title'>Batman Movie</p><p class='description justif'>After rescuing Han Solo from the palace of Jabba the Hutt, the rebels attempt to destroy the second Death Star, while Luke struggles to make Vader return from the dark side of the Force.</p></li>
+                      <li><img src="./assets/img/films/hostel-2005-thriller.jpg"><p class='title'>Hostel</p><p class='description justif'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p></li>
+                      <li><img src="./assets/img/films/inception-2010-scifi.jpg"><p class='title'>Inception</p><p class='description justif'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p></li>
+                      <li><img src="./assets/img/films/intouchables-2011-comedie.jpg"><p class='title'>Intouchables</p><p class='description justif'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p></li>
+                      <li><img src="./assets/img/films/hostel-2005-thriller.jpg"><p class='title'>Hostel</p><p class='description justif'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p></li>
+                  </ul>
             </div>
-            <div id="slideShowRight" class="col-sm-2">
-              <p> </p>
-            </div>
+            <script type="text/javascript">
+              $("#slidey").slidey({
+                  interval: 9000,
+                  listCount: 5,
+                  showList: true
+              });
+              $(".slidey-list-description").dotdotdot();
+            </script>
           </div>
-
         </div>
         <div class="container text-center">
-          <br>
-          <div id="boxe1">
-
-          </div>
+          <br><div id="boxe1"></div>
         </div>
         <div class="container-fluid">
-          <br>
-            <h2>FEATURED MOVIES</h2>
+          <br><h2>FEATURED MOVIES</h2>
           <div class="container">
-            <div id="categories">
-
-            </div>
-
-            <br>
+            <div id="categories"></div><br>
           </div>
           <div class="container text-center">
             <div id="boxe2"></div>
-            <div id="boxe22"></div>
-            <br>
+            <div id="boxe22"></div><br>
              <button id="plusdefilm" onclick="openBoxe22()" class="button1">Plus de film</button>
              <button id="moinsdefilm" onclick="openBoxe22()" class="button1">Moins de film</button>
           </div>
           <br>
-
         </div>
-
       </section>
-
       <footer id="main-footer">
-
-
       </footer>
     </div>
+
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
   </body>
 </html>
