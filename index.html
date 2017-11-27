@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+
     <!-- Nécessaire pour le slide -->
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link href="./assets/css/jquery.slidey.min.css" rel="stylesheet">
@@ -27,7 +27,15 @@
                 <img src="./assets/img/logo.png" alt="Logo" width="150px">
               </div>
               <div class="col-sm-6 text-center marginTop">
-                <input type="text" name="recherche" placeholder=""="Recherche">
+
+                <div class="container">
+                	<div class="row">
+                        <div class="search">
+                <input type="text" class="form-control input-sm" maxlength="64" placeholder="Rechercher" />
+                 <button type="submit" class="btn btn-primary btn-sm"><strong> Go</strong> </button>
+                </div>
+                	</div>
+                </div>
               </div>
               <div class="col-sm-3 marginTop">
                 <span>0473/45.45.45</span>
@@ -43,17 +51,16 @@
           <div class="row">
             <div id="slidey" style="display:none;">
                 <ul>
-                      <li><img src="./assets/img/films/batmanmovie-2017-comedie.jpg"><p class='title'>Batman Movie</p><p class='description justif'>After rescuing Han Solo from the palace of Jabba the Hutt, the rebels attempt to destroy the second Death Star, while Luke struggles to make Vader return from the dark side of the Force.</p></li>
-                      <li><img src="./assets/img/films/hostel-2005-thriller.jpg"><p class='title'>Hostel</p><p class='description justif'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p></li>
-                      <li><img src="./assets/img/films/inception-2010-scifi.jpg"><p class='title'>Inception</p><p class='description justif'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p></li>
-                      <li><img src="./assets/img/films/intouchables-2011-comedie.jpg"><p class='title'>Intouchables</p><p class='description justif'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p></li>
-                      <li><img src="./assets/img/films/hostel-2005-thriller.jpg"><p class='title'>Hostel</p><p class='description justif'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p></li>
-                  </ul>
+                      <li><img src="./assets/img/slide/inception.jpg"><p class='title'>Inception</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
+                      <li><img src="./assets/img/slide/batman.jpg"><p class='title'>Batman Movie</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
+                      <li><img src="./assets/img/slide/hostel.png"><p class='title'>Hostel</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
+                      <li><img src="./assets/img/slide/intouchables.jpg"><p class='title'>Intouchables</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
+                    </ul>
             </div>
             <script type="text/javascript">
               $("#slidey").slidey({
-                  interval: 9000,
-                  listCount: 5,
+                  interval: 38000,
+                  listCount: 4,
                   showList: true
               });
               $(".slidey-list-description").dotdotdot();
