@@ -1,15 +1,31 @@
 "user strict";
 let categorie="";
+let accesimg = "./assets/img/films/";
+
 let app = {
   db : {
     data : []
   },
+  addslideShowRight : function(){
+    console.log('Ajout du slideShowRight');
+    let slide = document.getElementById('slideShowRight');
+    for (var i = 0; i <= 4; i++) {
+      slide.innerHTML += "<div class=\"row filmslide\">" +
+      "<div class=\"col-sm-3\">" +
+        "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"50px\"> " +
+      "</div>" +
+      "<div class=\"col-sm-9\">" +
+        "<div class=\"gris marginOne inlineblock top\">" + app.db.data[i]['title'] + "</div></br>" +
+        "<div class=\"gris inlineblock top\">" + app.db.data[i]['desc'] + "</div>" +
+      "</div>" +
+      "</div>";
+
+    }
+  },
   addBoxe1 : function(){
     console.log('Ajout du boxe 1');
     let boxe1 = document.getElementById('boxe1');
-    for (var i = 0; i <= 5; i++) {
-      let accesimg = "./assets/img/films/";
-
+    for (var i = 0; i < 6; i++) {
       boxe1.innerHTML += "<div class=\"film\">" +
       "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
       "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
@@ -28,7 +44,7 @@ let app = {
     console.log('Ajout des catégories au boxe 2');
     let categories = document.getElementById('categories');
     let tab=[];
-    for (var i = 0; i <= 10; i++) {
+    for (var i = 0; i < 10; i++) {
         let cat = app.db.data[i]['categorie'];
         if (tab.indexOf(cat) > -1) {}
         else { tab.push(cat);}
@@ -44,9 +60,7 @@ let app = {
     console.log('Ajout du boxe 2');
     let boxe2 = document.getElementById('boxe2');
 
-    for (var i = 0; i <= 10; i++) {
-      let accesimg = "./assets/img/films/";
-
+    for (var i = 0; i < 12; i++) {
       boxe2.innerHTML += "<div class=\"film\">" +
       "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
       "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
@@ -62,9 +76,7 @@ let app = {
       console.log('Ajout du boxe 2-2');
       let boxe22 = document.getElementById('boxe22');
 
-      for (var i = 11; i <= 20; i++) {
-        let accesimg = "./assets/img/films/";
-
+      for (var i = 10; i < 20; i++) {
         boxe22.innerHTML += "<div class=\"film\">" +
         "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
         "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
@@ -80,6 +92,7 @@ let app = {
     }
   },
   start : function(){
+    app.addslideShowRight();
     app.addBoxe1();
     app.addBoxe2();
     app.addCategories();
@@ -89,6 +102,7 @@ let app = {
 app.db.data = [
 	{
 		"title"       : "Batman",
+    "desc"        : "test",
 		"annee"       : 2017,
 		"categorie"		: "Comedie",
     "linkimg"     : "batmanmovie-2017-comedie.jpg",
@@ -96,6 +110,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Hostel",
+    "desc"        : "",
 		"annee"       : 2005,
 		"categorie"		: "Thriller",
     "linkimg"     : "hostel-2005-thriller.jpg",
@@ -103,6 +118,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Inception",
+    "desc"        : "",
 		"annee"       : 2010,
 		"categorie"		: "Science-fiction",
     "linkimg"     : "inception-2010-scifi.jpg",
@@ -110,6 +126,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Intouchables",
+    "desc"        : "",
 		"annee"       : 2011,
 		"categorie"		: "Comedie",
     "linkimg"     : "intouchables-2011-comedie.jpg",
@@ -117,6 +134,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Le Patient Anglais",
+    "desc"        : "",
 		"annee"       : 1996,
 		"categorie"		: "Dramatique",
     "linkimg"     : "lepatientanglais-1996-dramatique.jpg",
@@ -124,6 +142,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Les Deux Tours",
+    "desc"        : "",
 		"annee"       : 2002,
 		"categorie"		: "Aventure",
     "linkimg"     : "lesdeuxtours-2002-aventure.jpg",
@@ -131,6 +150,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Seven",
+    "desc"        : "",
 		"annee"       : 1995,
 		"categorie"		: "Thriller",
     "linkimg"     : "seven-1995-thriller.jpg",
@@ -138,6 +158,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Shutter Island",
+    "desc"        : "",
 		"annee"       : 2010,
 		"categorie"		: "Thriller",
     "linkimg"     : "shutterisland-2010-thriller.jpg",
@@ -145,6 +166,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Star Wars Empire",
+    "desc"        : "",
 		"annee"       : 1980,
 		"categorie"		: "Science-fiction",
     "linkimg"     : "starwarsempire-1980-scifi.jpg",
@@ -152,6 +174,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Survive Style 5",
+    "desc"        : "",
 		"annee"       : 2004,
 		"categorie"		: "Comedie",
     "linkimg"     : "Survivestyle5-2004-comedie.jpg",
@@ -159,6 +182,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Swiss Army Man",
+    "desc"        : "",
 		"annee"       : 2016,
 		"categorie"		: "Comedie",
     "linkimg"     : "swissarmyman-2016-comedie.jpg",
@@ -166,6 +190,7 @@ app.db.data = [
 	},
   {
 		"title"       : "The Fall",
+    "desc"        : "",
 		"annee"       : 2006,
 		"categorie"		: "Dramatique",
     "linkimg"     : "thefall-2006-dramatique.jpg",
@@ -173,6 +198,7 @@ app.db.data = [
 	},
   {
 		"title"       : "What We Do In The Shadows",
+    "desc"        : "",
 		"annee"       : 2014,
 		"categorie"		: "Comedie",
     "linkimg"     : "WhatWeDoInTheShadows-2014-comedie.jpg",
@@ -180,6 +206,7 @@ app.db.data = [
 	},
   {
 		"title"       : "Zoolander",
+    "desc"        : "",
 		"annee"       : 2001,
 		"categorie"		: "Comedie",
     "linkimg"     : "zoolander-2001-comedie.jpg",
@@ -187,6 +214,7 @@ app.db.data = [
 	}
 ]
 app.start();
+/*JQUERY CODE*/
 function openBoxe22(){
   $(document).ready(function(){
     $("#boxe22").toggle();
@@ -194,7 +222,4 @@ function openBoxe22(){
     $("#moinsdefilm").toggle();
 
   });
-
-
 }
-/*JQUERY CODE*/
