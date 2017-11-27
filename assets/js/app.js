@@ -12,7 +12,28 @@ let app = {
       boxe1.innerHTML += "<div class=\"film\">" +
       "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
       "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
-        
+
+          "<div style=\"float:left\" class=\"gris\">"+
+          app.db.data[i]['annee'] +
+          "</div>" +
+          "<div style=\"float:right\">"+
+          app.db.data[i]['categorie'] +
+          "</div>" +
+      "</div>";
+
+    }
+  },
+  addBoxe2 : function(){
+    console.log('Ajout du boxe 2');
+    let boxe2 = document.getElementById('boxe2');
+
+    for (var i = 0; i <= 5; i++) {
+      let accesimg = "./assets/img/films/";
+
+      boxe2.innerHTML += "<div class=\"film\">" +
+      "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
+      "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
+
           "<div style=\"float:left\" class=\"gris\">"+
           app.db.data[i]['annee'] +
           "</div>" +
@@ -25,6 +46,7 @@ let app = {
   },
   start : function(){
     app.addBoxe1();
+    app.addBoxe2();
   }
 }
 

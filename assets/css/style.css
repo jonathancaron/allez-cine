@@ -1,3 +1,12 @@
+body{
+  font-family: sans-serif;
+}
+h2{
+  margin-left:150px;
+  padding-left:15px;
+  border-left: 7px solid #ffa44d;
+  display: block;
+}
 #slideShow{
   min-height: 400px;
   max-height: 400px;
@@ -32,4 +41,10 @@
   padding-right: 25px;
 
   display: inline-block;
+}
+#boxe1{
+  display: block;
+}
+#boxe2{
+  display: block;
 }
