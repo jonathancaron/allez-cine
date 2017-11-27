@@ -48,3 +48,21 @@ h2{
 #boxe2{
   display: block;
 }
+.cat{
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #d6d6d6;
+}
+.film{margin-top: 15px;}
+#boxe22{display:none;}
+#moinsdefilm{display: none;}
+.button1{
+  color: #ffffff;
+  border: 0;
+  background-color: #fd8c1b;
+  padding: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+}

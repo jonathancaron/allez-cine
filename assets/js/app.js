@@ -1,4 +1,5 @@
 "user strict";
+let categorie="";
 let app = {
   db : {
     data : []
@@ -23,11 +24,27 @@ let app = {
 
     }
   },
+  addCategories : function(){
+    console.log('Ajout des catégories au boxe 2');
+    let categories = document.getElementById('categories');
+    let tab=[];
+    for (var i = 0; i <= 10; i++) {
+        let cat = app.db.data[i]['categorie'];
+        if (tab.indexOf(cat) > -1) {}
+        else { tab.push(cat);}
+    }
+    console.log(tab);
+    for (var i = 0; i < tab.length; i++) {
+      categories.innerHTML += "<div class=\"cat\">" +
+          tab[i] +
+      "</div>";
+    }
+  },
   addBoxe2 : function(){
     console.log('Ajout du boxe 2');
     let boxe2 = document.getElementById('boxe2');
 
-    for (var i = 0; i <= 5; i++) {
+    for (var i = 0; i <= 10; i++) {
       let accesimg = "./assets/img/films/";
 
       boxe2.innerHTML += "<div class=\"film\">" +
@@ -41,12 +58,31 @@ let app = {
           app.db.data[i]['categorie'] +
           "</div>" +
       "</div>";
+    }
+      console.log('Ajout du boxe 2-2');
+      let boxe22 = document.getElementById('boxe22');
+
+      for (var i = 11; i <= 20; i++) {
+        let accesimg = "./assets/img/films/";
+
+        boxe22.innerHTML += "<div class=\"film\">" +
+        "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
+        "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
+
+            "<div style=\"float:left\" class=\"gris\">"+
+            app.db.data[i]['annee'] +
+            "</div>" +
+            "<div style=\"float:right\">"+
+            app.db.data[i]['categorie'] +
+            "</div>" +
+        "</div>";
 
     }
   },
   start : function(){
     app.addBoxe1();
     app.addBoxe2();
+    app.addCategories();
   }
 }
 
@@ -151,3 +187,14 @@ app.db.data = [
 	}
 ]
 app.start();
+function openBoxe22(){
+  $(document).ready(function(){
+    $("#boxe22").toggle();
+    $("#plusdefilm").toggle();
+    $("#moinsdefilm").toggle();
+
+  });
+
+
+}
+/*JQUERY CODE*/
