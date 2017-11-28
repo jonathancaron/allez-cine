@@ -1,11 +1,17 @@
 body{
   font-family: sans-serif;
+
 }
 h2{
   margin-left:150px;
   padding-left:15px;
   border-left: 7px solid #ffa44d;
   display: block;
+}
+#main{
+  width: 100%;
+  max-width: 100%;
+  overflow:hidden;
 }
 #slideShow{
   min-height: 400px;
