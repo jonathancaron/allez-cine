@@ -18,6 +18,41 @@
   </head>
   <body>
     <div id="main">
+      <!-- Début Info Modal -->
+      <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Connexion</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                  <label for="usr">Identifiant:</label>
+                  <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                  <a href="#">Vous avez oublié votre mot de passe ?</a>
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline"><input type="checkbox" value="">Rester connecté</label>
+                </div>
+
+                <button class="button1" type="button" name="button">Valider</button> <button class="button1" type="button" name="button">Créer un compte</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Fin Login Modal -->
       <!-- //nav -->
       <div class="general_social_icons">
       	<nav class="social">
@@ -29,7 +64,7 @@
       		</ul>
         </nav>
       </div>
-      
+
       <header id="main-header">
         <div class="container-fluid barreNav">
 
@@ -51,7 +86,7 @@
               </div>
               <div class="col-sm-3 marginTwo">
                 <span><img src="./assets/img/phone.png" width="10px"> (+000) 123 345 653) </span>
-                <button class="button1" type="button" name="button" style="margin-left:10px"><strong>LOGIN</strong></button>
+                <button class="button1" type="button" name="button" style="margin-left:10px" data-toggle="modal" data-target="#loginModal"><strong>LOGIN</strong></button>
               </div>
             </div>
           </div>
@@ -99,7 +134,7 @@
       <footer id="main-footer">
       </footer>
     </div>
-
+    <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
