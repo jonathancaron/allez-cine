@@ -1,6 +1,15 @@
 "user strict";
 let categorie="";
 let accesimg = "./assets/img/films/";
+// ageREQUEST
+let bouton = getElementById('oldEnough');
+let youAge =getElementById('yourAge');
+let popup = getElementById('popup');
+function ok(){
+    yourAge.style.display = "none";
+    popup.style.display = "none";
+}
+
 
 let app = {
   db : {
@@ -80,7 +89,7 @@ let app = {
     app.addBoxe1();
     app.addBoxe2();
     app.addCategories();
-
+    app.ok();
   }
 }
 
