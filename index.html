@@ -29,10 +29,12 @@
             <div id="popup">
                 <header>
                     <h1>What's your age?</h1>
-                    <sub>to enter this site you must confirm you're older than 16yo</sub>
+                    <sub>to enter this site you must confirm you're older than 16years old</sub>
                 </header>
-                <button type="button" id="oldEnough" name="oldEnough" onclick="ok()">Hellyeah</button>
-                <button type="button" id="tooYoung" name="tooYoung">too Young</button>
+                <div class="buttons">
+                    <button type="button" class="orange" id="oldEnough" name="oldEnough" onclick="ok()">+ 16</button>
+                    <button type="button" class="orange" id="tooYoung" name="tooYoung" onclick="nook()">- 16</button>
+                </div>
             </div>
         </div>
         <!-- fin AgeModal -->
