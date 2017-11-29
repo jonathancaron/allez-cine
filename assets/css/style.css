@@ -260,3 +260,13 @@ h2{
   margin-right: 15px;
   padding-right: 50px;
 }
+.itemcontact{
+  background-color: #ff8c1b;
+  padding: 10px;
+  border-radius: 45px;
+  position:relative;
+
+  top: -25px;
+  right: -15px;
+
+}
