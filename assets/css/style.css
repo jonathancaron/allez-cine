@@ -377,3 +377,22 @@ h2{
      margin: 60px;
 
 }
+#cookiespop{
+  padding-top: 15px;
+  color: #ffffff;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 90px;
+  min-height: 90px;
+  background-color: #d6844f;
+  /*border-top-left-radius: 15px;
+  border-top-right-radius: 15px;*/
+  display: none;
+}
