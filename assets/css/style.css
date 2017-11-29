@@ -333,3 +333,37 @@ h2{
 .contactimggoogle{
   background-color: #c93434;
 }
+#main-footer{
+  background-color: #242424;
+  min-height: 350px;
+}
+.footertitre{
+  color: #e37114;
+  font-size: 28px;
+}
+.borderfooter{
+  border: 1px solid #ffffff;
+
+}
+.inputfooter{
+  padding:5px;
+}
+.button3{
+  color: #ffffff;
+  border: 0;
+  background-color: #fd8c1b;
+  padding: 6px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-left: -15px;
+  margin-right:
+}
+.copyright{
+  color: #747474;
+}
+.copyrightright ul li{
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  padding-right: 5px;
+}
