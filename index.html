@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./assets/css/reset.css">
+
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Nécessaire pour le slide -->
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link href="./assets/css/jquery.slidey.min.css" rel="stylesheet">
@@ -13,9 +14,13 @@
     <script src="./assets/js/jquery.slidey.js"></script>
     <script src="./assets/js/jquery.dotdotdot.min.js"></script>
     <!-- // Nécessaire pour le slide -->
+    <link rel="stylesheet" href="assets/css/elisa.css">
+
+
 
     <title>Allez Ciné</title>
   </head>
+
   <body>
     <div id="main">
       <header id="main-header">
@@ -44,19 +49,73 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid orange barreNav2"></div>
+
+        <div class="container-fluid orange">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg" id="navigationBar">
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuMovies" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Movies
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuMovies">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Horror</a>
+                                      <a class="dropdown-item" href="#">Romance</a>
+                                    </div>
+                                </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuSeries" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Series
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuSeries">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Historic</a>
+                                  <a class="dropdown-item" href="#">Fantasy</a>
+                                </div>
+                              </li>
+                              <li class="nav-item ">
+                                  <a class="nav-link" href="#">Forum</a>
+                              </li>
+                              <li class="nav-item ">
+                                  <a class="nav-link" href="#">About</a>
+                              </li>
+                              <li class="nav-item ">
+                                  <a class="nav-link" href="#">Shop</a>
+                              </li>
+                              <li class="nav-item ">
+                                  <a class="nav-link" href="#">Contact</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
       </header>
       <section id="main-body">
         <div id="slideShow" class="container-fluid">
           <div class="row">
-            <div id="slidey" style="display:none;">
-                <ul>
-                      <li><img src="./assets/img/slide/inception.jpg"><p class='title'>Inception</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
-                      <li><img src="./assets/img/slide/batman.jpg"><p class='title'>Batman Movie</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
-                      <li><img src="./assets/img/slide/hostel.png"><p class='title'>Hostel</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
-                      <li><img src="./assets/img/slide/intouchables.jpg"><p class='title'>Intouchables</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
-                    </ul>
-            </div>
+                <div class="col-12">
+                    <div id="slidey" style="display:none;">
+                        <ul>
+                              <li><img src="./assets/img/slide/inception.jpg"><p class='title'>Inception</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
+                              <li><img src="./assets/img/slide/batman.jpg"><p class='title'>Batman Movie</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
+                              <li><img src="./assets/img/slide/hostel.png"><p class='title'>Hostel</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
+                              <li><img src="./assets/img/slide/intouchables.jpg"><p class='title'>Intouchables</p><p class='description justif'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></li>
+                            </ul>
+                    </div>
+                </div>
             <script type="text/javascript">
               $("#slidey").slidey({
                   interval: 38000,
@@ -89,5 +148,9 @@
     </div>
 
     <script src="./assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
   </body>
 </html>

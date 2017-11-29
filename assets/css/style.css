@@ -47,10 +47,10 @@ h2{
   min-height: 80px;
   max-height: 100px;
 }
-.barreNav2{
-  min-height: 80px;
-  max-height: 100px;
-}
+/*.barreNav2{
+  min-height: 50px;
+  max-height: 80px;
+}*/
 .marginTop{margin-top: 30px;vertical-align: middle;}
 .marginOne{margin-top: 10px;}
 .marginTwo{margin-top: 40px;}
