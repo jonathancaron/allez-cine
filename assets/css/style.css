@@ -270,3 +270,58 @@ h2{
   right: -15px;
 
 }
+.titlecontact{
+  color: #ffffff;
+  position:relative;
+  right: -15px;
+  font-size: 18px;
+}
+.textecontact{
+  color: #ffffff;
+  position:relative;
+  right: -15px;
+  font-size: 13px;
+  float:left;
+}
+.socialfb{
+  color: #ffffff;
+  background-color: #4057ee;
+  padding: 8px;
+  padding-left: 45px;
+  padding-right: 25px;
+  position:relative;
+  right: -15px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.contactimgfb{
+  background-color: #3548c4;
+}
+.socialtwitter{
+  color: #ffffff;
+  background-color: #40dfee;
+  padding: 8px;
+  padding-left: 45px;
+  padding-right: 43px;
+  position:relative;
+  right: -15px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.contactimgtwitter{
+  background-color: #33b4c1;
+}
+.socialgoogle{
+  color: #ffffff;
+  background-color: #ee4040;
+  padding: 8px;
+  padding-left: 45px;
+  padding-right: 45px;
+  position:relative;
+  right: -15px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.contactimggoogle{
+  background-color: #c93434;
+}
