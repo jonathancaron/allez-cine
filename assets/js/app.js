@@ -208,5 +208,11 @@ function openBoxe22(){
 
   });
 }
+$(document).ready(function(){
 
+  $("#upbody").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
+});
 /*slider*/
