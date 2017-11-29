@@ -81,6 +81,14 @@ h2{
   padding-left: 18px;
   padding-right: 18px;
 }
+.button2{
+  color: #ffffff;
+  border: 0;
+  background-color: #1d1d1d;
+  padding: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
 .left{float:left;}
 .right{float:right;}
 .top{vertical-align: top;}
