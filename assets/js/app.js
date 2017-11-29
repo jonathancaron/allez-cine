@@ -32,8 +32,9 @@ let app = {
         let cat = app.db.data[i]['categorie'];
         if (tab.indexOf(cat) > -1) {}
         else { tab.push(cat);}
+        console.log(tab[i]);
     }
-    console.log(tab);
+
     for (var i = 0; i < tab.length; i++) {
       categories.innerHTML += "<div class=\"cat\">" +
           tab[i] +
@@ -60,7 +61,7 @@ let app = {
       console.log('Ajout du boxe 2-2');
       let boxe22 = document.getElementById('boxe22');
 
-      for (var i = 10; i < 20; i++) {
+      for (var i = 10; i < app.db.data.length; i++) {
         boxe22.innerHTML += "<div class=\"film\">" +
         "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
         "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
@@ -207,3 +208,5 @@ function openBoxe22(){
 
   });
 }
+
+/*slider*/
