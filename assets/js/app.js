@@ -1,6 +1,16 @@
 "user strict";
 let categorie="";
 let accesimg = "./assets/img/films/";
+// ageREQUEST
+let youAge =getElementById('yourAge');
+let popup = getElementById('popup');
+function ok(){
+    yourAge.style.display = "none";
+    popup.style.display = "none";
+}
+function nook(){
+    window.location = "http://disneychannel.fr.disney.be/";
+}
 
 let app = {
   db : {
@@ -80,7 +90,8 @@ let app = {
     app.addBoxe1();
     app.addBoxe2();
     app.addCategories();
-
+    app.ok();
+    app.nook()
   }
 }
 
