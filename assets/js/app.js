@@ -22,7 +22,7 @@ function ok(){
 function nook(){
     window.location = "http://disneychannel.fr.disney.be/";
 }
-ok();
+
 
 
 let app = {
