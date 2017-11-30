@@ -1,3 +1,61 @@
+#yourAge{
+    display: block;
+    z-index: 10;
+    position: fixed;
+    left: 0; top:0;right: 0;bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    /*overflow: hidden;*/
+    /*opacity: 0.5;*/
+}
+#yourAge #popup{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    background-color: white;
+    opacity: 1;
+    z-index: 8;
+    width: 600px;
+    height: 400px;
+    padding: 5%;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 25%;
+    transform: translateY(-50%);
+}
+#yourAge header{
+    padding-bottom: 100px;
+}
+.buttons{
+    position: absolute;
+    left: 0; bottom: 0; right: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 40px;
+}
+#yourAge button{
+    display: block;
+    width: 100px; height: 50px;
+    border-radius: 25px;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-color: #ffa44d;
+    color: #fff;
+}
+
 .dropdown-item:hover{
     background-color: none;
 }
@@ -16,21 +74,6 @@
     padding-left: 40px ! important;
     padding-right: 40px !important;
     /*border: solid 1px black;*/
-
-}
-#navbarNavDropdown{
-    /*border: solid 1px black;*/
-}
-#navbarNavDropdown a{
-}
-#navigationBar{
-
-}
-.nav-item{
-
-}
-.navbar-nav li{
-
 }
 .navbar-toggler{
     background-color: black;

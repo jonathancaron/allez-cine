@@ -24,6 +24,20 @@
 
   <body onload="checkCookie()">
     <div id="main">
+        <!-- début: AgeModal -->
+        <div id="yourAge">
+            <div id="popup">
+                <header>
+                    <h1>What's your age?</h1>
+                    <sub>to enter this site you must confirm you're older than 16years old</sub>
+                </header>
+                <div class="buttons">
+                    <button type="button" class="orange" id="oldEnough" name="oldEnough" onclick="ok()">+ 16</button>
+                    <button type="button" class="orange" id="tooYoung" name="tooYoung" onclick="nook()">- 16</button>
+                </div>
+            </div>
+        </div>
+        <!-- fin AgeModal -->
       <!-- Cookies -->
       <div id="cookiespop" class="text-center">
         <p>Acceptez-vous le dépôt et la lecture de cookies afin que nous et nos partenaires puissions analyser vos centres d'intérêts pour vous proposer des publicités personnalisées ?</p>
