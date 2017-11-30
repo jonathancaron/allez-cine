@@ -2,8 +2,8 @@
 let categorie="";
 let accesimg = "./assets/img/films/";
 // ageREQUEST
-let youAge =getElementById('yourAge');
-let popup = getElementById('popup');
+let yourAge = document.getElementById('yourAge');
+let popup = document.getElementById('popup');
 function ok(){
     yourAge.style.display = "none";
     popup.style.display = "none";
@@ -11,7 +11,7 @@ function ok(){
 function nook(){
     window.location = "http://disneychannel.fr.disney.be/";
 }
-
+ok();
 
 let app = {
   db : {
@@ -32,7 +32,6 @@ let app = {
           app.db.data[i]['categorie'] +
           "</div>" +
       "</div>";
-
     }
   },
   addCategories : function(){
@@ -91,8 +90,6 @@ let app = {
     app.addBoxe1();
     app.addBoxe2();
     app.addCategories();
-    app.ok();
-    app.nook()
   }
 }
 
@@ -103,7 +100,7 @@ app.db.data = [
 		"annee"       : 2017,
 		"categorie"		: "Comedie",
     "linkimg"     : "batmanmovie-2017-comedie.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/watch?v=dvJaSmunY7Y"
 	},
   {
 		"title"       : "Hostel",
@@ -111,7 +108,7 @@ app.db.data = [
 		"annee"       : 2005,
 		"categorie"		: "Thriller",
     "linkimg"     : "hostel-2005-thriller.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/watch?v=cVBdQiUHhZI"
 	},
   {
 		"title"       : "Inception",
@@ -119,7 +116,7 @@ app.db.data = [
 		"annee"       : 2010,
 		"categorie"		: "Science-fiction",
     "linkimg"     : "inception-2010-scifi.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/watch?v=PQvoKjade9k"
 	},
   {
 		"title"       : "Intouchables",
@@ -127,7 +124,7 @@ app.db.data = [
 		"annee"       : 2011,
 		"categorie"		: "Comedie",
     "linkimg"     : "intouchables-2011-comedie.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/watch?v=cXu2MhWYUuE"
 	},
   {
 		"title"       : "Le Patient Anglais",
@@ -135,7 +132,7 @@ app.db.data = [
 		"annee"       : 1996,
 		"categorie"		: "Dramatique",
     "linkimg"     : "lepatientanglais-1996-dramatique.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/watch?v=FguRZAv_LS4"
 	},
   {
 		"title"       : "Les Deux Tours",
@@ -234,7 +231,24 @@ $(document).ready(function(){
   $("#noncookie").click(function() {
     $("#cookiespop").hide(1000);
   });
+
+  $(".film").click(function() {
+    var cefilm = $(this).index();
+    console.log(cefilm);
+    openBoxeClickFilm(cefilm);
+  });
 });
+
+function openBoxeClickFilm(idfilm){
+  let dividfilm = document.getElementById('filminfomodal');
+  dividfilm.innerHTML = "<div class=\"form-group\">"+
+    "<label for=\"usr\">Titre: "+ app.db.data[idfilm]['title'] +"</label>"+
+
+    "</div>";
+  $("#openboxeinfo").modal();
+
+
+}
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
