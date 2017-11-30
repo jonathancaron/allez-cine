@@ -55,7 +55,6 @@
     background-color: #ffa44d;
     color: #fff;
 }
-
 .dropdown-item:hover{
     background-color: none;
 }
@@ -87,6 +86,7 @@
     border: none !important;
 
 }
+.dropdown-toggle{background-color: #ff8c1b ! important;}
 .dropdown-item{
     margin-top: 4px ! important;
     background-color: #ff8c1b;
@@ -101,6 +101,7 @@ a:visited {
   text-decoration:  none;
   color:            #fff !important;
   font-size:        16px !important;
+  background-color: #ff8c1b;
   }
 a:hover   {
   text-decoration:  none!important;
