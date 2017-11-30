@@ -214,7 +214,6 @@ $(document).ready(function(){
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
   });
-
   $("#ouicookie").click(function() {
     $("#cookiespop").hide(1000);
     setCookie("username", "user", 365);
@@ -256,7 +255,3 @@ function checkCookie() {
         $("#cookiespop").show();
     }
 }
-
-});
-/*slider*/
-
