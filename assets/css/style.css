@@ -45,7 +45,7 @@ h2{
 .barreNav{
   background-color:#ffffff;
   min-height: 80px;
-  max-height: 100px;
+
 }
 /*.barreNav2{
   min-height: 50px;
@@ -53,7 +53,7 @@ h2{
 }*/
 .marginTop{margin-top: 30px;vertical-align: middle;}
 .marginOne{margin-top: 10px;}
-.marginTwo{margin-top: 40px;}
+.marginTwo{margin-top: 40px;padding-left:60px;}
 
 .film{
   padding-right: 25px;
@@ -101,7 +101,8 @@ h2{
 #search {
     float: right;
     margin-top: 9px;
-    width: 280px;
+    width: 20%;
+
 }
 
 .search {
@@ -111,7 +112,8 @@ h2{
     position: relative;
     left: 10px;
     float: left;
-    line-height: 22px;
+    margin-left: -20px;
+
 
 }
 
@@ -395,4 +397,8 @@ h2{
   /*border-top-left-radius: 15px;
   border-top-right-radius: 15px;*/
   display: none;
+}
+.disp{
+    border: 0px;
+    background-color: inherit;
 }
