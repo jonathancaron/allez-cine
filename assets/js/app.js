@@ -100,7 +100,7 @@ app.db.data = [
 		"annee"       : 2017,
 		"categorie"		: "Comedie",
     "linkimg"     : "batmanmovie-2017-comedie.jpg",
-		"linkyoutube" : "https://www.youtube.com/watch?v=dvJaSmunY7Y"
+		"linkyoutube" : "https://www.youtube.com/embed/dvJaSmunY7Y"
 	},
   {
 		"title"       : "Hostel",
@@ -108,7 +108,7 @@ app.db.data = [
 		"annee"       : 2005,
 		"categorie"		: "Thriller",
     "linkimg"     : "hostel-2005-thriller.jpg",
-		"linkyoutube" : "https://www.youtube.com/watch?v=cVBdQiUHhZI"
+		"linkyoutube" : "https://www.youtube.com/embed/cVBdQiUHhZI"
 	},
   {
 		"title"       : "Inception",
@@ -116,7 +116,7 @@ app.db.data = [
 		"annee"       : 2010,
 		"categorie"		: "Science-fiction",
     "linkimg"     : "inception-2010-scifi.jpg",
-		"linkyoutube" : "https://www.youtube.com/watch?v=PQvoKjade9k"
+		"linkyoutube" : "https://www.youtube.com/embed/PQvoKjade9k"
 	},
   {
 		"title"       : "Intouchables",
@@ -124,7 +124,7 @@ app.db.data = [
 		"annee"       : 2011,
 		"categorie"		: "Comedie",
     "linkimg"     : "intouchables-2011-comedie.jpg",
-		"linkyoutube" : "https://www.youtube.com/watch?v=cXu2MhWYUuE"
+		"linkyoutube" : "https://www.youtube.com/embed/cXu2MhWYUuE"
 	},
   {
 		"title"       : "Le Patient Anglais",
@@ -132,7 +132,7 @@ app.db.data = [
 		"annee"       : 1996,
 		"categorie"		: "Dramatique",
     "linkimg"     : "lepatientanglais-1996-dramatique.jpg",
-		"linkyoutube" : "https://www.youtube.com/watch?v=FguRZAv_LS4"
+		"linkyoutube" : "https://www.youtube.com/embed/FguRZAv_LS4"
 	},
   {
 		"title"       : "Les Deux Tours",
@@ -140,7 +140,7 @@ app.db.data = [
 		"annee"       : 2002,
 		"categorie"		: "Aventure",
     "linkimg"     : "lesdeuxtours-2002-aventure.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/c9blKqmyeV4"
 	},
   {
 		"title"       : "Seven",
@@ -148,7 +148,7 @@ app.db.data = [
 		"annee"       : 1995,
 		"categorie"		: "Thriller",
     "linkimg"     : "seven-1995-thriller.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/4IYMRiHAyB8"
 	},
   {
 		"title"       : "Shutter Island",
@@ -156,7 +156,7 @@ app.db.data = [
 		"annee"       : 2010,
 		"categorie"		: "Thriller",
     "linkimg"     : "shutterisland-2010-thriller.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/inAFW2CluQ4"
 	},
   {
 		"title"       : "Star Wars Empire",
@@ -164,7 +164,7 @@ app.db.data = [
 		"annee"       : 1980,
 		"categorie"		: "Science-fiction",
     "linkimg"     : "starwarsempire-1980-scifi.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/JNwNXF9Y6kY"
 	},
   {
 		"title"       : "Survive Style 5",
@@ -172,7 +172,7 @@ app.db.data = [
 		"annee"       : 2004,
 		"categorie"		: "Comedie",
     "linkimg"     : "Survivestyle5-2004-comedie.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/LEH7nDkiPEk"
 	},
   {
 		"title"       : "Swiss Army Man",
@@ -180,7 +180,7 @@ app.db.data = [
 		"annee"       : 2016,
 		"categorie"		: "Comedie",
     "linkimg"     : "swissarmyman-2016-comedie.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/yrK1f4TsQfM"
 	},
   {
 		"title"       : "The Fall",
@@ -188,7 +188,7 @@ app.db.data = [
 		"annee"       : 2006,
 		"categorie"		: "Dramatique",
     "linkimg"     : "thefall-2006-dramatique.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/IwsYyRc9j4g"
 	},
   {
 		"title"       : "What We Do In The Shadows",
@@ -196,7 +196,7 @@ app.db.data = [
 		"annee"       : 2014,
 		"categorie"		: "Comedie",
     "linkimg"     : "WhatWeDoInTheShadows-2014-comedie.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/IAZEWtyhpes"
 	},
   {
 		"title"       : "Zoolander",
@@ -204,7 +204,7 @@ app.db.data = [
 		"annee"       : 2001,
 		"categorie"		: "Comedie",
     "linkimg"     : "zoolander-2001-comedie.jpg",
-		"linkyoutube" : ""
+		"linkyoutube" : "https://www.youtube.com/embed/k_s4gnrYkUA"
 	}
 ]
 app.start();
@@ -241,12 +241,9 @@ $(document).ready(function(){
 
 function openBoxeClickFilm(idfilm){
   let dividfilm = document.getElementById('filminfomodal');
-  dividfilm.innerHTML = "<div class=\"form-group\">"+
-    "<label for=\"usr\">Titre: "+ app.db.data[idfilm]['title'] +"</label>"+
-
-    "</div>";
+  dividfilm.innerHTML = "<div class=\"form-group\"><iframe width=\"420\" height=\"315\" src=\"" + app.db.data[idfilm]['linkyoutube'] +"\" frameborder=\"0\" allowfullscreen></iframe> </div>"+
+  "<div class=\"form-group\"><label for=\"usr\">Titre: "+ app.db.data[idfilm]['title'] +"</label></div>";
   $("#openboxeinfo").modal();
-
 
 }
 
