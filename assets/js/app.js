@@ -2,17 +2,15 @@
 let categorie="";
 let accesimg = "./assets/img/films/";
 // ageREQUEST
-let youAge =getElementById('yourAge');
-let popup = getElementById('popup');
-let yourAge = document.getElementById('yourAge');
-let popup = document.getElementById('popup');
-function ok(){
-    yourAge.style.display = "none";
-    popup.style.display = "none";
-}
-function nook(){
-    window.location = "http://disneychannel.fr.disney.be/";
-}
+// let yourAge = document.getElementById('yourAge');
+// let popup = document.getElementById('popup');
+// function ok(){
+//     yourAge.style.display = "none";
+//     popup.style.display = "none";
+// }
+// function nook(){
+//     window.location = "http://disneychannel.fr.disney.be/";
+// }
 
 
 let app = {
