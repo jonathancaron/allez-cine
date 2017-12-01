@@ -114,26 +114,7 @@ let app = {
   },
   addMoviePres : function(){
     console.log('Ajout présentation film');
-    let moviePres = document.getElementById('shopMovies');
-    // for (var i = 0; i < 6; i++) {
-        moviePres.innerHTML += "<div class=\"col-lg-6 movieVid\">"+
-            "<iframe src="+app.db.data[1]['linkyoutube']+" width=\"100%\" height=\"100%\">"+"<\/iframe>"+
-            "</div>"+
-            "<div class=\"col-lg-6 movieInfo\">"+
-                "<div class=\"col-lg-12 pt-2 pb-2\"><h3>"+app.db.data[1]['title'] +"</h3></div>"+
 
-                    "<div class=\"col-lg-3\"><p>Plot:</p></div>"+
-                        "<div class=\"col-lg-9 text-left\" style=\"color: #fffbd4;\"><p>"+app.db.data[1][''] +"</p></div>"+
-
-                    "<div class=\"col-lg-3\"><p>Date sortie: </p></div>"+
-                        "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+app.db.data[1]['annee'] +"</p></div>"+
-
-                    "<div class=\"col-lg-3\"><p>Genres:</p></div>"+
-                        "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+app.db.data[1]['categorie'] +"</p></div>"+
-
-                    "<div class=\"col-lg-3\"><p>prix: </p></div>"+
-                        "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+Math.random()+" BTC</p></div>"+
-        "</div>"
   },
   addBoxe3 : function(){
     console.log('Ajout du boxe 3');
@@ -336,7 +317,36 @@ $(document).ready(function(){
     console.log(cefilm);
     openBoxeClickFilm(cefilm);
   });
+
+  $(".film3").click(function() {
+    var cefilm = $(this).index();
+    changeTexte(cefilm);
+
+  });
 });
+
+function changeTexte(idfilm){
+  let madiv = document.getElementById('shopMovies');
+  madiv.innerHTML = "<div class=\"col-lg-6 movieVid\">"+
+      "<iframe src="+app.db.data[idfilm]['linkyoutube']+" width=\"100%\" height=\"100%\">"+"<\/iframe>"+
+      "</div>"+
+      "<div class=\"col-lg-6 movieInfo\">"+
+          "<div class=\"col-lg-12 pt-2 pb-2\"><h3>"+app.db.data[idfilm]['title'] +"</h3></div>"+
+
+              "<div class=\"col-lg-3\"><p>Plot:</p></div>"+
+                  "<div class=\"col-lg-9 text-left\" style=\"color: #fffbd4;\"><p>"+app.db.data[idfilm][''] +"</p></div>"+
+
+              "<div class=\"col-lg-3\"><p>Date sortie: </p></div>"+
+                  "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+app.db.data[idfilm]['annee'] +"</p></div>"+
+
+              "<div class=\"col-lg-3\"><p>Genres:</p></div>"+
+                  "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+app.db.data[idfilm]['categorie'] +"</p></div>"+
+
+              "<div class=\"col-lg-3\"><p>prix: </p></div>"+
+                  "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+Math.random()+" BTC</p></div>"+
+  "</div>"
+
+}
 
 function openBoxeClickFilm(idfilm){
   let dividfilm = document.getElementById('filminfomodal');
