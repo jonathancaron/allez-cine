@@ -156,7 +156,7 @@ h2{
       margin-left:100px;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 1399px)
+@media screen and (min-width: 600px) and (max-width: 1399px)
 {
   .search input {
       width: 330px;
@@ -166,6 +166,13 @@ h2{
   }
   .phonelog{
     margin-left:240px;
+  }
+
+}
+@media screen and (min-width: 00px) and (max-width: 1000px)
+{
+  #boxe1{
+    margin-top: 450px;
   }
 }
 
