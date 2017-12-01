@@ -36,8 +36,9 @@ h2{
 }
 #boxe2{
   display: block;
+  margin-left: 35px;
 }
-#boxe22{display:none;}
+#boxe22{display:none;margin-left: 35px;}
 #moinsdefilm{display: none;}
 .orange{background-color:#ff8c1b;}
 .gris{color:#888888;}
@@ -57,7 +58,12 @@ h2{
 .marginTwo{margin-top: 40px;padding-left:60px;}
 
 .film{
+<<<<<<< HEAD
   padding-right: 25px;
+=======
+  padding-left: 25px;
+
+>>>>>>> jonathan
   display: inline-block;
 }
 .film2{
@@ -82,6 +88,14 @@ h2{
   color: #ffffff;
   border: 0;
   background-color: #fd8c1b;
+  padding: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.button4{
+  color: #000000;
+  border: 0;
+  background-color: #e3dede;
   padding: 8px;
   padding-left: 18px;
   padding-right: 18px;
@@ -114,10 +128,8 @@ h2{
     padding: 5px 0;
     width: 230px;
     height: 30px;
-    position: relative;
-    left: 10px;
-    float: left;
-    margin-left: -20px;
+
+
 
 
 }
@@ -126,18 +138,16 @@ h2{
         position: absolute;
         width: 0px;
         float: Left;
-        margin-left: 210px;
-        padding-left: 20px;
+
 
         height: 40px;
         line-height: 18px;
         padding: 10 2px 0 2px;
         border-radius:1px;
         width: 400px;
-            margin-left: 0px;
+        margin-left: 0px;
             z-index:1;
     }
-
 
 
 .btn {
@@ -154,6 +164,37 @@ h2{
 
 
 }
+
+@media screen and (max-width: 599px)
+{
+  .search input {
+      width: 230px;
+
+  }
+  .btn {
+      margin-left:100px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1399px)
+{
+  .search input {
+      width: 330px;
+  }
+  .btn {
+      margin-left:200px;
+  }
+  .phonelog{
+    margin-left:240px;
+  }
+
+}
+@media screen and (min-width: 00px) and (max-width: 1000px)
+{
+  #boxe1{
+    margin-top: 450px;
+  }
+}
+
 
 .social {
   position: fixed;
@@ -272,6 +313,7 @@ h2{
 .boxeFooter{
   background-color: #393939;
   min-height: 250px;
+  min-width: 200px;
   margin-right: 15px;
   padding-right: 50px;
 }
@@ -382,6 +424,7 @@ h2{
      padding: 10px;
      border-radius: 45px;
      margin: 60px;
+     z-index: 1;
 
 }
 #cookiespop{
@@ -406,4 +449,28 @@ h2{
 .disp{
     border: 0px;
     background-color: inherit;
+}
+.filterDiv {
+  float: left;
+  display: none;
+  max-height: 250px;
+
+}
+
+.show {
+  display: block;
+
+}
+
+.container {
+
+  overflow: hidden;
+}
+@media screen and (max-width: 599px)
+{
+  .boxeFooter{
+      margin-right: 0px;
+
+  }
+
 }
