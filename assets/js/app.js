@@ -23,10 +23,7 @@ function ok(){
 function nook(){
     window.location = "http://disneychannel.fr.disney.be/";
 }
-<<<<<<< HEAD
 
-
-=======
 filterSelection("all");
 function filterSelection(c) {
   var x, i;
@@ -37,7 +34,7 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
->>>>>>> jonathan
+
 
 function w3AddClass(element, name) {
   var i, arr1, arr2;
@@ -158,13 +155,13 @@ let app = {
   start : function(){
     app.addBoxe1();
     app.addBoxe2();
-<<<<<<< HEAD
+
     app.addCategories();
     app.addMoviePres();
     app.addBoxe3();
-=======
+
     filterSelection("all");
->>>>>>> jonathan
+
   }
 }
 
