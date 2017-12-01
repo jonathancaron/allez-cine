@@ -110,7 +110,7 @@ app.db.data = [
 		"annee"       : 2005,
 		"categorie"		: "Thriller",
     "linkimg"     : "hostel-2005-thriller.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/cVBdQiUHhZI"
+		"linkyoutube" : "https://www.youtube.com/embed/cVBdQiUHhZI",
     "realisateur" : "Eli Roth",
     "acteurs"     : "Carter McMullen. Thomas Kretschmann. Rôle : Flemming. John Hensley. Rôle : Justin. Sarah Habel. Rôle : Kendra. Barry Livingston."
 	},
@@ -120,7 +120,7 @@ app.db.data = [
 		"annee"       : 2010,
 		"categorie"		: "Science-fiction",
     "linkimg"     : "inception-2010-scifi.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/PQvoKjade9k"
+		"linkyoutube" : "https://www.youtube.com/embed/PQvoKjade9k",
     "realisateur" : "Christopher Nolan",
     "acteurs"     : "Leonardo DiCaprio, Ellen Page, Cillian Murphy, Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Tom Hardy."
 	},
@@ -130,7 +130,7 @@ app.db.data = [
 		"annee"       : 2011,
 		"categorie"		: "Comedie",
     "linkimg"     : "intouchables-2011-comedie.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/cXu2MhWYUuE"
+		"linkyoutube" : "https://www.youtube.com/embed/cXu2MhWYUuE",
     "realisateur" : "Olivier Nakache, Éric Toledano",
     "acteurs"     : "François Cluzet, Omar Sy"
 	},
@@ -140,7 +140,7 @@ app.db.data = [
 		"annee"       : 1996,
 		"categorie"		: "Dramatique",
     "linkimg"     : "lepatientanglais-1996-dramatique.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/FguRZAv_LS4"
+		"linkyoutube" : "https://www.youtube.com/embed/FguRZAv_LS4",
     "realisateur" : "Anthony Minghella",
     "acteurs"     : "Ralph Fiennes, Kristin Scott Thomas, Willem Dafoe, Juliette Binoche, Colin Firth, Naveen Andrews."
 	},
@@ -150,7 +150,7 @@ app.db.data = [
 		"annee"       : 2002,
 		"categorie"		: "Aventure",
     "linkimg"     : "lesdeuxtours-2002-aventure.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/c9blKqmyeV4"
+		"linkyoutube" : "https://www.youtube.com/embed/c9blKqmyeV4",
     "realisateur" : "Peter Jackson",
     "acteurs"     : "Elijah Wood, Viggo Mortensen, Orlando Bloom"
 	},
@@ -160,7 +160,7 @@ app.db.data = [
 		"annee"       : 1995,
 		"categorie"		: "Thriller",
     "linkimg"     : "seven-1995-thriller.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/4IYMRiHAyB8"
+		"linkyoutube" : "https://www.youtube.com/embed/4IYMRiHAyB8",
     "realisateur" : "David Fincher",
     "acteurs"     : "Brad Pitt, Morgan Freeman"
 	},
@@ -170,19 +170,19 @@ app.db.data = [
 		"annee"       : 2010,
 		"categorie"		: "Thriller",
     "linkimg"     : "shutterisland-2010-thriller.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/inAFW2CluQ4"
-    "realisateur" : "",
-    "acteurs"     : ""
+		"linkyoutube" : "https://www.youtube.com/embed/inAFW2CluQ4",
+    "realisateur" : "Martin Scorsese",
+    "acteurs"     : "Leonardo DiCaprio, Mark Ruffalo"
 	},
   {
 		"title"       : "Star Wars Empire",
-    "desc"        : "",
+    "desc"        : "L'Empire contre-attaque est un film américain de science-fiction de type space opera sorti en 1980, co-écrit par George Lucas et Lawrence Kasdan, et réalisé par Irvin Kershner.",
 		"annee"       : 1980,
 		"categorie"		: "Science-fiction",
     "linkimg"     : "starwarsempire-1980-scifi.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/JNwNXF9Y6kY"
-    "realisateur" : "Martin Scorsese",
-    "acteurs"     : "Leonardo DiCaprio, Mark Ruffalo"
+		"linkyoutube" : "https://www.youtube.com/embed/JNwNXF9Y6kY",
+    "realisateur" : "George Lucas, Lawrence Kasdan",
+    "acteurs"     : "John Leguizamo, Denise Richards, Isabella Rossellini, Peter Sarsgaard"
 	},
   {
 		"title"       : "Survive Style 5",
@@ -190,7 +190,7 @@ app.db.data = [
 		"annee"       : 2004,
 		"categorie"		: "Comedie",
     "linkimg"     : "Survivestyle5-2004-comedie.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/LEH7nDkiPEk"
+		"linkyoutube" : "https://www.youtube.com/embed/LEH7nDkiPEk",
     "realisateur" : "Gen Sekiguchi",
     "acteurs"     : "Tadanobu Asano, Reika Hashimoto"
 	},
@@ -200,7 +200,7 @@ app.db.data = [
 		"annee"       : 2016,
 		"categorie"		: "Comedie",
     "linkimg"     : "swissarmyman-2016-comedie.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/yrK1f4TsQfM"
+		"linkyoutube" : "https://www.youtube.com/embed/yrK1f4TsQfM",
     "realisateur" : "Daniel Kwan, Daniel Scheinert",
     "acteurs"     : "Paul Dano, Daniel Radcliffe"
 	},
@@ -210,7 +210,7 @@ app.db.data = [
 		"annee"       : 2006,
 		"categorie"		: "Dramatique",
     "linkimg"     : "thefall-2006-dramatique.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/IwsYyRc9j4g"
+		"linkyoutube" : "https://www.youtube.com/embed/IwsYyRc9j4g",
     "realisateur" : "Tarsem Singh",
     "acteurs"     : "Lee Pace, Catinca Untaru"
 	},
@@ -220,7 +220,7 @@ app.db.data = [
 		"annee"       : 2014,
 		"categorie"		: "Comedie",
     "linkimg"     : "WhatWeDoInTheShadows-2014-comedie.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/IAZEWtyhpes"
+		"linkyoutube" : "https://www.youtube.com/embed/IAZEWtyhpes",
     "realisateur" : "Taika Waititi, Jemaine Clement",
     "acteurs"     : "Jemaine Clement, Taika Waititi"
 	},
@@ -230,7 +230,7 @@ app.db.data = [
 		"annee"       : 2001,
 		"categorie"		: "Comedie",
     "linkimg"     : "zoolander-2001-comedie.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/k_s4gnrYkUA"
+		"linkyoutube" : "https://www.youtube.com/embed/k_s4gnrYkUA",
     "realisateur" : "Ben Stiller",
     "acteurs"     : "Ben Stiller, Owen Wilson"
 	}
@@ -270,7 +270,10 @@ $(document).ready(function(){
 function openBoxeClickFilm(idfilm){
   let dividfilm = document.getElementById('filminfomodal');
   dividfilm.innerHTML = "<div class=\"form-group\"><iframe width=\"420\" height=\"315\" src=\"" + app.db.data[idfilm]['linkyoutube'] +"\" frameborder=\"0\" allowfullscreen></iframe> </div>"+
-  "<div class=\"form-group\"><label for=\"usr\">"+ app.db.data[idfilm]['title'] +"</label></div>";
+  "<div class=\"form-group\"><label for=\"usr\">Titre :</label> "+ app.db.data[idfilm]['title'] +"</div>"+
+    "<div class=\"form-group\"><label for=\"usr\">Description :</label></br>"+ app.db.data[idfilm]['desc'] +"</div>"+
+      "<div class=\"form-group\"><label for=\"usr\">Réalisateur(s) :</label> "+ app.db.data[idfilm]['realisateur'] +"</div>"+
+        "<div class=\"form-group\"><label for=\"usr\">Acteurs :</label> "+ app.db.data[idfilm]['acteurs'] +"</div>";
   $("#openboxeinfo").modal();
 
 }
