@@ -125,7 +125,6 @@
 #shopMovies{
     padding-left: 3%;
     padding-right: 3%;
-
 }
 .movieVid{
     height: 350px;
@@ -133,5 +132,27 @@
 }
 .movieInfo{
     height: 350px;
-    background-color: grey;
+    background-color: #ff8c1b;
+}
+.movieInfo h3{
+    height: 80px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: black;
+}
+
+#moviePres{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#boxe3 {
+}
+#boxe3 .film3{
+    margin-top: 15px;
+    padding-right: 25px;
+    display: inline-block;
+}
+#boxe3 img{
+    vertical-align: middle;
+    border: 0;
 }

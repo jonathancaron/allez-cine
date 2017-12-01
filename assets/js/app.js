@@ -98,11 +98,34 @@ let app = {
 
     }
   },
+  addMoviePres : function(){
+    console.log('Ajout présentation film');
+    let moviePres = document.getElementById('shopMovies');
+    // for (var i = 0; i < 6; i++) {
+        moviePres.innerHTML += "<div class=\"col-lg-6 movieVid\">"+
+            "<iframe src="+app.db.data[1]['linkyoutube']+" width=\"100%\" height=\"100%\">"+"<\/iframe>"+
+            "</div>"+
+            "<div class=\"col-lg-6 movieInfo\">"+
+                "<div class=\"col-lg-12 pt-2 pb-2\"><h3>"+app.db.data[1]['title'] +"</h3></div>"+
+
+                    "<div class=\"col-lg-3\"><p>Plot:</p></div>"+
+                        "<div class=\"col-lg-9 text-left\" style=\"color: #fffbd4;\"><p>"+app.db.data[1][''] +"</p></div>"+
+
+                    "<div class=\"col-lg-3\"><p>Date sortie: </p></div>"+
+                        "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+app.db.data[1]['annee'] +"</p></div>"+
+
+                    "<div class=\"col-lg-3\"><p>Genres:</p></div>"+
+                        "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+app.db.data[1]['categorie'] +"</p></div>"+
+
+                    "<div class=\"col-lg-3\"><p>prix: </p></div>"+
+                        "<div class=\"col-lg-9\" style=\"color: #fffbd4;\"><p>"+Math.random()+" BTC</p></div>"+
+        "</div>"
+  },
   addBoxe3 : function(){
     console.log('Ajout du boxe 3');
-    let boxe1 = document.getElementById('boxe3');
+    let boxe3 = document.getElementById('boxe3');
     for (var i = 0; i < 6; i++) {
-      boxe1.innerHTML += "<div class=\"film\">" +
+      boxe3.innerHTML += "<div class=\"film3\">" +
       "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
       "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
 
@@ -119,6 +142,8 @@ let app = {
     app.addBoxe1();
     app.addBoxe2();
     app.addCategories();
+    app.addMoviePres();
+    app.addBoxe3();
   }
 }
 
@@ -235,6 +260,7 @@ app.db.data = [
     "linkimg"     : "zoolander-2001-comedie.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/k_s4gnrYkUA"
 	}
+
 ]
 app.start();
 /*JQUERY CODE*/

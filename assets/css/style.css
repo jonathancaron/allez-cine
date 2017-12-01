@@ -47,6 +47,7 @@ h2{
   min-height: 80px;
 
 }
+
 /*.barreNav2{
   min-height: 50px;
   max-height: 80px;
@@ -57,8 +58,12 @@ h2{
 
 .film{
   padding-right: 25px;
-
   display: inline-block;
+}
+.film2{
+    padding-right: 25px;
+    margin-top: 15px;
+    display: inline-block;
 }
 
 .cat{
