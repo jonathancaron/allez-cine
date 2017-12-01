@@ -33,14 +33,7 @@
             </div>
             <div class="modal-body">
               <div id="filminfomodal">
-
               </div>
-                <!-- <div class="form-group">
-                  <label for="usr">Identifiant:</label>
-                  <input type="text" class="form-control" id="usr">
-                </div>
-                <button class="button1" type="button" name="button">Valider</button> <button class="button1" type="button" name="button">Créer un compte</button>
-              </form> -->
             </div>
             <div class="modal-footer">
               <button type="button" class="button1" data-dismiss="modal">Fermer</button>
@@ -231,13 +224,21 @@
         <div class="container-fluid">
           <br><h2>FEATURED MOVIES</h2>
           <div class="container">
-            <div id="categories"></div><br>
+
+            <input type="radio" onclick="filterSelection('all')" name="category" checked> Show all
+            <input type="radio" onclick="filterSelection('Comedie')" name="category"> Comedie
+            <input type="radio" onclick="filterSelection('Thriller')" name="category"> Thriller
+            <input type="radio" onclick="filterSelection('Science-fiction')" name="category"> Science-fiction
+            <input type="radio" onclick="filterSelection('Dramatique')" name="category"> Dramatique
+            <input type="radio" onclick="filterSelection('Aventure')" name="category"> Aventure
           </div>
           <div class="container text-center">
             <div id="boxe2"></div>
             <div id="boxe22"></div><br>
-             <button id="plusdefilm" onclick="openBoxe22()" class="button1">Plus de film</button>
-             <button id="moinsdefilm" onclick="openBoxe22()" class="button1">Moins de film</button>
+          </div>
+          <div class="container text-center"><br><br>
+            <button id="plusdefilm" onclick="openBoxe22()" class="button1">Plus de film</button>
+            <button id="moinsdefilm" onclick="openBoxe22()" class="button1">Moins de film</button>
           </div>
           <br>
         </div>
@@ -326,7 +327,7 @@
                 <div class="col-sm-12 text-center">
                   <img class="itemcontact" src="./assets/img/user.png" width="46px;">
                   <p class="titlecontact">Social Media</p>
-                  <span class="socialfb"><span style="margin-left:-30px"><img style="margin-right:15px" class="contactimgfb" src="./assets/img/facebook.png" width="15px;"><strong>Facebook</strong></span></span>
+                  <span class="socialfb"><span style="max-width:50px;margin-left:-30px"><img style="margin-right:15px" class="contactimgfb" src="./assets/img/facebook.png" width="15px;"><strong>Facebook</strong></span></span>
                   <br>
                   <span class="socialtwitter"><span style="margin-left:-30px"><img style="margin-right:15px" class="contactimgtwitter" src="./assets/img/twitter.png" width="15px;"><strong>Twitter</strong></span></span>
                   <br>

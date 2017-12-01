@@ -12,7 +12,37 @@ function ok(){
 function nook(){
     window.location = "http://disneychannel.fr.disney.be/";
 }
+filterSelection("all");
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
 let app = {
   db : {
     data : []
@@ -34,29 +64,12 @@ let app = {
       "</div>";
     }
   },
-  addCategories : function(){
-    console.log('Ajout des catégories au boxe 2');
-    let categories = document.getElementById('categories');
-    let tab=[];
-    for (var i = 0; i < 10; i++) {
-        let cat = app.db.data[i]['categorie'];
-        if (tab.indexOf(cat) > -1) {}
-        else { tab.push(cat);}
-        console.log(tab[i]);
-    }
-
-    for (var i = 0; i < tab.length; i++) {
-      categories.innerHTML += "<div class=\"cat\">" +
-          tab[i] +
-      "</div>";
-    }
-  },
   addBoxe2 : function(){
     console.log('Ajout du boxe 2');
     let boxe2 = document.getElementById('boxe2');
 
-    for (var i = 0; i < 12; i++) {
-      boxe2.innerHTML += "<div class=\"film\">" +
+    for (var i = 0; i <= 11; i++) {
+      boxe2.innerHTML += "<div class=\"film filterDiv "+app.db.data[i]['categorie']+"\">" +
       "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
       "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
 
@@ -71,8 +84,8 @@ let app = {
       console.log('Ajout du boxe 2-2');
       let boxe22 = document.getElementById('boxe22');
 
-      for (var i = 10; i < app.db.data.length; i++) {
-        boxe22.innerHTML += "<div class=\"film\">" +
+      for (var i = 13; i < app.db.data.length; i++) {
+        boxe22.innerHTML += "<div class=\"film filterDiv "+app.db.data[i]['categorie']+"\">" +
         "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
         "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
 
@@ -89,7 +102,7 @@ let app = {
   start : function(){
     app.addBoxe1();
     app.addBoxe2();
-    app.addCategories();
+    filterSelection("all");
   }
 }
 
