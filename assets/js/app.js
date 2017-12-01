@@ -326,7 +326,6 @@ $(document).ready(function(){
   $("#ouicookie").click(function() {
     $("#cookiespop").hide(1000);
     setCookie("username", "user", 365);
-    console.log(getCookie(user));
   });
   $("#noncookie").click(function() {
     $("#cookiespop").hide(1000);
