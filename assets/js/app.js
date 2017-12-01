@@ -87,12 +87,28 @@ let app = {
 
     }
   },
+  addBoxe3 : function(){
+    console.log('Ajout du boxe 3');
+    let boxe1 = document.getElementById('boxe3');
+    for (var i = 0; i < 6; i++) {
+      boxe1.innerHTML += "<div class=\"film\">" +
+      "<img src=\"" + accesimg + app.db.data[i]['linkimg'] + "\" width=\"150px\"> <br>" +
+      "<div class=\"gris marginOne\">" + app.db.data[i]['title'] + "</div>" +
+
+          "<div style=\"float:left\" class=\"gris\">"+
+          app.db.data[i]['annee'] +
+          "</div>" +
+          "<div style=\"float:right\">"+
+          app.db.data[i]['categorie'] +
+          "</div>" +
+      "</div>";
+    }
+  },
   start : function(){
     app.addBoxe1();
     app.addBoxe2();
     app.addCategories();
-    app.ok();
-    app.nook()
+    app.addBoxe3();
   }
 }
 

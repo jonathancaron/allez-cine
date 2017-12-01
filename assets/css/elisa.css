@@ -113,3 +113,16 @@
   font-size:        16px !important;
   background-color: black;
   }
+#shopMovies{
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+.movieVid{
+    height: 350px;
+    background-color: black;
+}
+.movieInfo{
+    height: 350px;
+    background-color: grey;
+}
