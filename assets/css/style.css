@@ -109,10 +109,8 @@ h2{
     padding: 5px 0;
     width: 230px;
     height: 30px;
-    position: relative;
-    left: 10px;
-    float: left;
-    margin-left: -20px;
+
+
 
 
 }
@@ -121,18 +119,16 @@ h2{
         position: absolute;
         width: 0px;
         float: Left;
-        margin-left: 210px;
-        padding-left: 20px;
+
 
         height: 40px;
         line-height: 18px;
         padding: 10 2px 0 2px;
         border-radius:1px;
         width: 400px;
-            margin-left: 0px;
+        margin-left: 0px;
             z-index:1;
     }
-
 
 
 .btn {
@@ -149,6 +145,30 @@ h2{
 
 
 }
+
+@media screen and (max-width: 599px)
+{
+  .search input {
+      width: 230px;
+
+  }
+  .btn {
+      margin-left:100px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1399px)
+{
+  .search input {
+      width: 330px;
+  }
+  .btn {
+      margin-left:200px;
+  }
+  .phonelog{
+    margin-left:240px;
+  }
+}
+
 
 .social {
   position: fixed;
