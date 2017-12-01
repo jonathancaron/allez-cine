@@ -1,3 +1,4 @@
+/*//// AGE REQUEST */
 #yourAge{
     display: block;
     z-index: 10;
@@ -55,6 +56,9 @@
     background-color: #ffa44d;
     color: #fff;
 }
+
+/*//////NAVBAR */
+
 .dropdown-item:hover{
     background-color: none;
 }
@@ -79,7 +83,7 @@
 
 }
 .navbar-toggler{
-    background-color: black;
+
 }
 .dropdown-menu{
     box-shadow: 0 0 0 rgba(0,0,0,0) !important;
@@ -92,18 +96,18 @@
     background-color: #ff8c1b;
 
 }
-li a:link    {
+#navigationBar li a:link    {
   text-decoration:  none!important;
   color:            #fff !important;
   font-size:        16px !important;
   }
-a:visited {
+#navigationBar a:visited {
   text-decoration:  none;
   color:            #fff !important;
   font-size:        16px !important;
   background-color: #ff8c1b;
   }
-a:hover   {
+#navigationBar a:hover   {
   text-decoration:  none!important;
   font-weight:      bold!important;
   color:            #fff !important;
@@ -111,10 +115,44 @@ a:hover   {
   font-size:        16px !important;
   background-color: black !important;
   }
-a:active  {
+#navigationBar a:active  {
   text-decoration:  none!important;
   font-weight:      bold!important;
   color:            #fff!important;
   font-size:        16px !important;
   background-color: black;
   }
+#shopMovies{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.movieVid{
+    height: 350px;
+    background-color: black;
+}
+.movieInfo{
+    height: 350px;
+    background-color: #ff8c1b;
+}
+.movieInfo h3{
+    height: 80px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: black;
+}
+
+#moviePres{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#boxe3 {
+}
+#boxe3 .film3{
+    margin-top: 15px;
+    padding-right: 25px;
+    display: inline-block;
+}
+#boxe3 img{
+    vertical-align: middle;
+    border: 0;
+}
