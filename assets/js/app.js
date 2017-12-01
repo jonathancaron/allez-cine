@@ -7,11 +7,11 @@ let popup = document.getElementById('popup');
 function ok(){
     yourAge.style.display = "none";
     popup.style.display = "none";
+    setCookie("age", "ok", 365);
 }
 function nook(){
     window.location = "http://disneychannel.fr.disney.be/";
 }
-ok();
 
 let app = {
   db : {
@@ -96,67 +96,83 @@ let app = {
 app.db.data = [
 	{
 		"title"       : "Batman",
-    "desc"        : "test",
+    "desc"        : "Lego Batman, le film est un film d'animation américano-australo-danois réalisé par Chris McKay, sorti en 2017. Il s'agit d'un film dérivé de La Grande Aventure Lego centré sur le personnage de Batman.",
 		"annee"       : 2017,
 		"categorie"		: "Comedie",
     "linkimg"     : "batmanmovie-2017-comedie.jpg",
-		"linkyoutube" : "https://www.youtube.com/embed/dvJaSmunY7Y"
+		"linkyoutube" : "https://www.youtube.com/embed/dvJaSmunY7Y",
+    "realisateur" : "Chris McKay",
+    "acteurs"     : "With Will Arnett, Michael Cera, Rosario Dawson, Ralph Fiennes"
 	},
   {
 		"title"       : "Hostel",
-    "desc"        : "",
+    "desc"        : "Hostel, ou L'Auberge au Québec, est un film d'horreur américain écrit et réalisé par Eli Roth, sorti en 2006. Il s'agit du premier film de la série de films Hostel.",
 		"annee"       : 2005,
 		"categorie"		: "Thriller",
     "linkimg"     : "hostel-2005-thriller.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/cVBdQiUHhZI"
+    "realisateur" : "Eli Roth",
+    "acteurs"     : "Carter McMullen. Thomas Kretschmann. Rôle : Flemming. John Hensley. Rôle : Justin. Sarah Habel. Rôle : Kendra. Barry Livingston."
 	},
   {
 		"title"       : "Inception",
-    "desc"        : "",
+    "desc"        : "Inception, ou Origine au Québec et au Nouveau-Brunswick, est un thriller de science-fiction américano-britannique écrit, réalisé et produit par Christopher Nolan, et sorti en 2010.",
 		"annee"       : 2010,
 		"categorie"		: "Science-fiction",
     "linkimg"     : "inception-2010-scifi.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/PQvoKjade9k"
+    "realisateur" : "Christopher Nolan",
+    "acteurs"     : "Leonardo DiCaprio, Ellen Page, Cillian Murphy, Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Tom Hardy."
 	},
   {
 		"title"       : "Intouchables",
-    "desc"        : "",
+    "desc"        : "« Intouchables » c'est ce nom, c'est un film français sorti au 2012. Il parle de deux hommes de deux différent univers avec différent goût de vie, qui sont tout opposé pourtant ils sont réunis par l'amour et l'amitié.",
 		"annee"       : 2011,
 		"categorie"		: "Comedie",
     "linkimg"     : "intouchables-2011-comedie.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/cXu2MhWYUuE"
+    "realisateur" : "Olivier Nakache, Éric Toledano",
+    "acteurs"     : "François Cluzet, Omar Sy"
 	},
   {
 		"title"       : "Le Patient Anglais",
-    "desc"        : "",
+    "desc"        : "Le Patient anglais est un film d'Anthony Minghella inspiré du roman L'Homme flambé de Michael Ondaatje et sorti en 1996.",
 		"annee"       : 1996,
 		"categorie"		: "Dramatique",
     "linkimg"     : "lepatientanglais-1996-dramatique.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/FguRZAv_LS4"
+    "realisateur" : "Anthony Minghella",
+    "acteurs"     : "Ralph Fiennes, Kristin Scott Thomas, Willem Dafoe, Juliette Binoche, Colin Firth, Naveen Andrews."
 	},
   {
 		"title"       : "Les Deux Tours",
-    "desc"        : "",
+    "desc"        : "Le Seigneur des anneaux : Les Deux Tours est un film américano-néo-zélandais réalisé par Peter Jackson, sorti en 2002. Il est basé sur le deuxième tome du roman Le Seigneur des anneaux, de l'écrivain britannique J. R. R. Tolkien.",
 		"annee"       : 2002,
 		"categorie"		: "Aventure",
     "linkimg"     : "lesdeuxtours-2002-aventure.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/c9blKqmyeV4"
+    "realisateur" : "Peter Jackson",
+    "acteurs"     : "Elijah Wood, Viggo Mortensen, Orlando Bloom"
 	},
   {
 		"title"       : "Seven",
-    "desc"        : "",
+    "desc"        : "Seven ou Sept au Québec est un thriller américain de David Fincher sorti en 1995. Le scénario est écrit par Andrew Kevin Walker et distribué par New Line Cinema. Wikipédia",
 		"annee"       : 1995,
 		"categorie"		: "Thriller",
     "linkimg"     : "seven-1995-thriller.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/4IYMRiHAyB8"
+    "realisateur" : "David Fincher",
+    "acteurs"     : "Brad Pitt, Morgan Freeman"
 	},
   {
 		"title"       : "Shutter Island",
-    "desc"        : "",
+    "desc"        : "Shutter Island est un thriller psychologique américain de Martin Scorsese, sorti en février 2010. C'est l'adaptation du roman Shutter Island de Dennis Lehane.",
 		"annee"       : 2010,
 		"categorie"		: "Thriller",
     "linkimg"     : "shutterisland-2010-thriller.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/inAFW2CluQ4"
+    "realisateur" : "",
+    "acteurs"     : ""
 	},
   {
 		"title"       : "Star Wars Empire",
@@ -165,46 +181,58 @@ app.db.data = [
 		"categorie"		: "Science-fiction",
     "linkimg"     : "starwarsempire-1980-scifi.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/JNwNXF9Y6kY"
+    "realisateur" : "Martin Scorsese",
+    "acteurs"     : "Leonardo DiCaprio, Mark Ruffalo"
 	},
   {
 		"title"       : "Survive Style 5",
-    "desc"        : "",
+    "desc"        : "Survive Style 5+ est un film japonais réalisé par Gen Sekiguchi, sorti le 7 août 2004.",
 		"annee"       : 2004,
 		"categorie"		: "Comedie",
     "linkimg"     : "Survivestyle5-2004-comedie.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/LEH7nDkiPEk"
+    "realisateur" : "Gen Sekiguchi",
+    "acteurs"     : "Tadanobu Asano, Reika Hashimoto"
 	},
   {
 		"title"       : "Swiss Army Man",
-    "desc"        : "",
+    "desc"        : "Swiss Army Man est un film dramatique américain écrit et réalisé par Dan Kwan et Daniel Scheinert et sorti en 2016.",
 		"annee"       : 2016,
 		"categorie"		: "Comedie",
     "linkimg"     : "swissarmyman-2016-comedie.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/yrK1f4TsQfM"
+    "realisateur" : "Daniel Kwan, Daniel Scheinert",
+    "acteurs"     : "Paul Dano, Daniel Radcliffe"
 	},
   {
 		"title"       : "The Fall",
-    "desc"        : "",
+    "desc"        : "The Fall est un film américano-britannico-indien réalisé par Tarsem Singh, sorti en 2006, Inspiré du scénario écrit par Valeri Petrov pour le film bulgare Yo Ho Ho réalisé par Zako Heskija en 1981.",
 		"annee"       : 2006,
 		"categorie"		: "Dramatique",
     "linkimg"     : "thefall-2006-dramatique.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/IwsYyRc9j4g"
+    "realisateur" : "Tarsem Singh",
+    "acteurs"     : "Lee Pace, Catinca Untaru"
 	},
   {
 		"title"       : "What We Do In The Shadows",
-    "desc"        : "",
+    "desc"        : "Vampires en toute intimité est une comédie horrifique néo-zélandaise filmée sous la forme du documentaire dont la première projection a eu lieu en janvier 2014 au festival du film de Sundance.",
 		"annee"       : 2014,
 		"categorie"		: "Comedie",
     "linkimg"     : "WhatWeDoInTheShadows-2014-comedie.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/IAZEWtyhpes"
+    "realisateur" : "Taika Waititi, Jemaine Clement",
+    "acteurs"     : "Jemaine Clement, Taika Waititi"
 	},
   {
 		"title"       : "Zoolander",
-    "desc"        : "",
+    "desc"        : "Zoolander est un film australo-germano-américain réalisé par Ben Stiller, sorti en 2001.",
 		"annee"       : 2001,
 		"categorie"		: "Comedie",
     "linkimg"     : "zoolander-2001-comedie.jpg",
 		"linkyoutube" : "https://www.youtube.com/embed/k_s4gnrYkUA"
+    "realisateur" : "Ben Stiller",
+    "acteurs"     : "Ben Stiller, Owen Wilson"
 	}
 ]
 app.start();
@@ -242,7 +270,7 @@ $(document).ready(function(){
 function openBoxeClickFilm(idfilm){
   let dividfilm = document.getElementById('filminfomodal');
   dividfilm.innerHTML = "<div class=\"form-group\"><iframe width=\"420\" height=\"315\" src=\"" + app.db.data[idfilm]['linkyoutube'] +"\" frameborder=\"0\" allowfullscreen></iframe> </div>"+
-  "<div class=\"form-group\"><label for=\"usr\">Titre: "+ app.db.data[idfilm]['title'] +"</label></div>";
+  "<div class=\"form-group\"><label for=\"usr\">"+ app.db.data[idfilm]['title'] +"</label></div>";
   $("#openboxeinfo").modal();
 
 }
@@ -272,9 +300,13 @@ function getCookie(cname) {
 function checkCookie() {
 
     var user = getCookie("username");
+    var userr = getCookie("age");
     if (user != "") {
         $("#cookiespop").hide();
     } else {
         $("#cookiespop").show();
     }
+
+    if (userr == "ok")
+      {ok();}
 }
