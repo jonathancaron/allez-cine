@@ -156,7 +156,6 @@ let app = {
     app.addBoxe1();
     app.addBoxe2();
 
-    app.addCategories();
     app.addMoviePres();
     app.addBoxe3();
 
